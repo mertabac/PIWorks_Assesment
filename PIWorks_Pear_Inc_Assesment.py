@@ -119,36 +119,3 @@ def best_fitting_model(X_train, y_train, X_test, y_test):
     accuracy = magic.score(X_test, y_test)
     return magic, accuracy
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
