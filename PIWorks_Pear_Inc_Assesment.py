@@ -9,6 +9,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 from sklearn.tree import DecisionTreeClassifier
+# Confusion matrix defining
 def plot_conf_mat(y_test, y_preds, title):
 
     sns.set(font_scale=1.5)
@@ -90,7 +91,7 @@ for n in [100, 200, 300, 400, 500]:
 results_random_forest_df = pd.DataFrame(results_random_forest, columns=["n_estimators", "accuracy"])
 print(plot_conf_mat(y_test, y_pred,'Random Forest'))
 
-
+# Visualization on best models
 fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(10, 5))
 
 ax1.plot(results_random_forest_df['n_estimators'], results_random_forest_df['accuracy'], 'bo-', label='Accuracy')
